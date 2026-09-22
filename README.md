@@ -10,7 +10,7 @@ A local personal study and productivity system.
 
 ## Running
 
-Open PowerShell in this folder:
+Open PowerShell in this folder (type cd "file address"):
 
 ```powershell
 npm install
