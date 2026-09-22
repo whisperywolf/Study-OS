@@ -1,2 +1,18 @@
-# Study-OS
-I made an app which helps you track your study progress, it includes logs, progress bars, side quests, users can import/export data and reset data aswell, it is on the first working list, more updates will be added
+# Study OS
+
+A local personal study and productivity system.
+
+## Requirements
+
+- Windows 10 or 11
+- Node.js LTS
+- npm
+
+## Running
+
+Open PowerShell in this folder:
+
+```powershell
+npm install
+npm start
+```
