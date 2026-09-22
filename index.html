@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Study OS</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- SIDEBAR -->
+
+  <aside class="sidebar">
+
+    <div class="brand">
+      <div class="brand-icon">S</div>
+
+      <div>
+        <strong>Study OS</strong>
+        <small>Your personal system</small>
+      </div>
+    </div>
+
+    <nav>
+
+      <button class="nav active" data-page="dashboard">
+        <span>⌂</span>
+        Dashboard
+      </button>
+
+      <button class="nav" data-page="tasks">
+        <span>✓</span>
+        Tasks
+      </button>
+
+      <button class="nav" data-page="subjects">
+        <span>◈</span>
+        Subjects
+      </button>
+
+      <button class="nav" data-page="quests">
+        <span>◆</span>
+        Side Quests
+      </button>
+
+      <button class="nav" data-page="sessions">
+        <span>◷</span>
+        Study Log
+      </button>
+
+    </nav>
+
+    <div class="sidebar-bottom">
+
+      <button id="exportBtn">
+        Export backup
+      </button>
+
+      <button id="importBtn">
+        Import backup
+      </button>
+
+      <input
+        id="importFile"
+        type="file"
+        accept=".json"
+        hidden
+      >
+
+      <button id="resetBtn" class="danger">
+        Reset data
+      </button>
+
+    </div>
+
+  </aside>
+
+
+  <!-- MAIN -->
+
+  <main>
+
+    <header class="topbar">
+
+      <div>
+        <div id="dateLabel" class="date"></div>
+        <h1 id="pageTitle">Dashboard</h1>
+      </div>
+
+      <button id="quickSession" class="primary">
+        + Log study session
+      </button>
+
+    </header>
+
+    <section id="content"></section>
+
+  </main>
+
+</div>
+
+
+<!-- MODAL -->
+
+<div id="modal" class="modal hidden">
+
+  <div class="modal-card">
+
+    <div class="modal-header">
+
+      <h2 id="modalTitle"></h2>
+
+      <button id="closeModal" class="close">
+        ×
+      </button>
+
+    </div>
+
+    <div id="modalBody"></div>
+
+  </div>
+
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>

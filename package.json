@@ -1,0 +1,12 @@
+{
+  "name": "study-os",
+  "version": "0.1.0",
+  "description": "Personal study and life operating system",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^38.0.0"
+  }
+}
